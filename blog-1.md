@@ -7,7 +7,7 @@
 console.log(`hello, ${name}`)
 }
 
-student(232)```
+student(232) 
 
 so we should avoid using any type cause it can show error in runtime
 
@@ -23,7 +23,7 @@ return "Invalid data"
 }
 }
 
-const result = Data("hello world")```
+const result = Data("hello world")
 
  so we should use unknown when we want to ensure type safety
 
