@@ -4,8 +4,6 @@ function filterEvenNumbers(arr: number[]): number[] {
   return even;
 }
 
-// console.log(filterEvenNumbers([1, 2, 3, 4, 5, 6]));
-
 // Problem 2
 function reverseString(value: string): string {
   const splitString = value.split("");
@@ -13,8 +11,6 @@ function reverseString(value: string): string {
   const joinString = reversString.join("");
   return joinString;
 }
-
-// console.log(reverseString("typescript"));
 
 // Problem 3
 type StringOrNumber = string | number;
@@ -27,17 +23,10 @@ function checkType(value: StringOrNumber) {
   }
 }
 
-// console.log(checkType(54));
-
 // Problem 4
-
-const user = { id: 1, name: "John Doe", age: 21 };
-
 const getProperty = <T, k extends keyof T>(obj: T, key: k) => {
   return obj[key];
 };
-
-// console.log(getProperty(user, "id"));
 
 // Problem 5
 
@@ -54,14 +43,6 @@ function toggleReadStatus(book: Book) {
     isRead: true,
   };
 }
-
-// const myBook = {
-//   title: "TypeScript Guide",
-//   author: "Jane Doe",
-//   publishedYear: 2024,
-// };
-
-// console.log(toggleReadStatus(myBook));
 
 // problem 6
 
@@ -86,18 +67,9 @@ class Student extends Person {
   }
 }
 
-// const student = new Student("Alice", 20, "A")
-// console.log(student.getDetails())
-
-
 // problem 7
 
-
-
-function getIntersection(arr1: number[], arr2: number[]) : number[]{
-  const filter = arr1.filter(item => arr2.includes(item))
-  return filter
-
+function getIntersection(arr1: number[], arr2: number[]): number[] {
+  const filter = arr1.filter((item) => arr2.includes(item));
+  return filter;
 }
-
-// console.log(getIntersection([1, 2, 3, 4, 5], [3, 4, 5, 6, 7]))

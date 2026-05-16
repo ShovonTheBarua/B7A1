@@ -1,9 +1,3 @@
-<!-- 
-Generic allow us to write flexible, reusable code that works with multiple data type. Generics provide compile-time type checking. Generics can also helpful for code reusability
-
-
- -->
-
 # How do Generics allow you to build reusable components and functions that stay strictly typed regardless of the data structures passed in?
 
 ### Generic type
@@ -19,8 +13,6 @@ function student<T>(data: T) {
 
 let result1 = student("hellow");
 let result2 = student(34);
- ```
+```
 
-Therefore, generic can makes our code reusable and we don't have define type individually. 
-
- 
+Therefore, generic can makes our code reusable and we don't have define type individually.
